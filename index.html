@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script
+      src="/_next/static/chunks/pages/_app.jsx"
+      defer=""
+      crossorigin=""
+      type="text/javascript"
+    ></script>
+    <meta charset="utf-8" />
+    <meta name="og:title" content="https://5ywwrl.csb.app" />
+    <meta
+      name="og:description"
+      content="The official website for JCJenson and Seth. You can find information regarding JCJenson or Seth's YouTube channel."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://images-ext-1.discordapp.net/external/SL5o9BgQmqCTgls4dQqqd4lupox-_7VZs6aKReVdyUQ/https/cdn.discordapp.com/icons/452237221840551938/a_fa9751611dca589ffd0371c44d4e78b3.gif?width=96&amp;height=96"
+    />
+    <meta name="theme-color" content="#f47fff" />
+    <link rel="icon" href="../img/seth-head.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../img/seth-head.png" type="image/x-icon" />
+    <title>JCJenson - Home</title>
+    <meta name="next-head-count" content="9" />
+    <link
+      rel="stylesheet"
+      href="https://c2f01f0c-69a8-416a-9f06-089f25afd74d-00-2pycn28a8ezys.riker.replit.dev/Navbar.css"
+    />
+  </head>
+  <body>
+    <div id="__next">
+      <header class="header">
+        <div class="container d-inline d-md-block">
+          <div class="floating-nav mt-lg-5">
+            <nav
+              class="navbar navbar-expand-lg navbar-dark"
+              style="padding: 0px"
+            >
+              <a href="/" class="navbar-brand"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="64"
+                  height="64"
+                  decoding="async"
+                  data-nimg="1"
+                  class="mb-0 mt-1"
+                  src="img/seth-head.png"
+                  style="color: transparent"
+              /></a>
+              <button
+                aria-controls="responsive-navbar-nav"
+                type="button"
+                aria-label="Toggle navigation"
+                class="navbar-toggler collapsed"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse" id="responsive-navbar-nav">
+                <div class="mr-auto navbar-nav"></div>
+                <div class="navbar-nav">
+                  <a href="/" data-rr-ui-event-key="/" class="nav-link">Home</a>
+                  <div class="nav-item dropdown">
+                    <a
+                      aria-expanded="false"
+                      role="button"
+                      class="dropdown-toggle nav-link"
+                      tabindex="0"
+                      href="#"
+                      >Server Info</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggler = document.querySelector(".navbar-toggler");
+        const navbarCollapse = document.getElementById("responsive-navbar-nav");
+        let p = {
+          COLLAPSE: "collapse",
+          COLLAPSING: "collapsing",
+          SHOW: "show",
+          COLLAPSE_SHOW: "collapse show",
+        };
+
+        toggler.addEventListener("click", function () {
+          if (!navbarCollapse.classList.contains(p.SHOW)) {
+            navbarCollapse.style.height = "0px";
+            navbarCollapse.setAttribute(
+              "class",
+              "navbar-collapse " + p.COLLAPSING,
+            );
+            setTimeout(function () {
+              navbarCollapse.style.height = `${navbarCollapse.scrollHeight}px`;
+            }, 10);
+          } else if (navbarCollapse.classList.contains(p.COLLAPSE)) {
+            navbarCollapse.style.height = `${navbarCollapse.scrollHeight}px`;
+            navbarCollapse.setAttribute(
+              "class",
+              "navbar-collapse " + p.COLLAPSING,
+            );
+            setTimeout(function () {
+              navbarCollapse.style.height = "0px";
+            }, 10);
+          }
+        });
+        navbarCollapse.addEventListener("transitionend", function () {
+          if (navbarCollapse.style.height != "0px") {
+            navbarCollapse.setAttribute(
+              "class",
+              "navbar-collapse " + p.COLLAPSE_SHOW,
+            );
+            navbarCollapse.style.height = "";
+          } else if (navbarCollapse.style.height == "0px") {
+            navbarCollapse.setAttribute(
+              "class",
+              "navbar-collapse " + p.COLLAPSE,
+            );
+            navbarCollapse.style.height = "";
+          }
+        });
+        const dropdowns = document.querySelectorAll(".dropdown");
+
+        dropdowns.forEach((dropdown) => {
+          const toggleButton = dropdown.querySelector(".dropdown-toggle");
+          const dropdownMeny = dropdown.querySelector(".dropdown-menu");
+        });
+      });
+    </script>
+  </body>
+</html>
