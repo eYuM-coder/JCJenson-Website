@@ -9323,7 +9323,7 @@ html {
 }
 
 .background-img {
-  background-image: url(/_next/static/media/sounddrout-banner.00208cb7.png) !important;
+  background-image: url(/_next/static/media/jcjenson-banner.png) !important;
   background-position: 0 0;
 }
 
@@ -9728,7 +9728,7 @@ input:checked + .slider:before {
 }
 
 .parallax {
-  background-image: url(/_next/static/media/website_banner_resized_blurred.e4c36caa.png);
+  background-image: url(/_next/static/media/jcjenson-banner.png);
   min-height: 800px;
   background-attachment: fixed;
   background-position: 50%;
@@ -10318,7 +10318,7 @@ img.bg-image {
 }
 
 .bg-pattern {
-  background-image: url(/_next/static/media/pattern.5a9af2f3.svg);
+  background-image: url(/_next/static/media/jcjenson-banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
