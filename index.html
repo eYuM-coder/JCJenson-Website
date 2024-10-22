@@ -343,22 +343,19 @@
       </footer>
     </div>
     <script>
-      function setProps(
-        {
-          strings = ["Put your strings here...", "and Enjoy!"],
-          typeSpeed = 100,
-          backSpeed = 50,
-          backDelay = 500,
-          startDelay = 500,
-          cursorChar = "|",
-          placeholder = false,
-          showCursor = true,
-          disableBackTyping = false,
-          loop = true,
-          onFinished = function () {},
-        },
-        {}
-      ) {
+      function setProps({
+        strings = ["Put your strings here...", "and Enjoy!"],
+        typeSpeed = 100,
+        backSpeed = 50,
+        backDelay = 500,
+        startDelay = 500,
+        cursorChar = "|",
+        placeholder = false,
+        showCursor = true,
+        disableBackTyping = false,
+        loop = true,
+        onFinished = function () {},
+      } = {}) {
         return {
           strings,
           typeSpeed,
@@ -420,7 +417,14 @@
       document.addEventListener("DOMContentLoaded", function () {
         let element = document.getElementById("typed");
         init(element, {
-          strings: [""],
+          strings: [
+            "Subscribe to Seth.",
+            "Join JCJenson in Spaaaaaaaaaace today!",
+            "Follow Seth on Twitter/X.",
+            "Watch Murder Drones on YouTube!",
+            "Visit eYuM's Lounge! https://eyums-lounge.vercel.app",
+            "Enjoy.",
+          ],
           typeSpeed: 150,
           backSpeed: 50,
           loop: true,
