@@ -9323,7 +9323,7 @@ html {
 }
 
 .background-img {
-  background-image: url(/_next/static/media/jcjenson-banner.jpg) !important;
+  background-image: url(/_next/static/media/seth-banner.webp) !important;
   background-position: 0 0;
 }
 
@@ -9728,7 +9728,7 @@ input:checked + .slider:before {
 }
 
 .parallax {
-  background-image: url(/_next/static/media/jcjenson-banner.png);
+  background-image: url(/_next/static/media/jcjenson-banner.jpg);
   min-height: 800px;
   background-attachment: fixed;
   background-position: 50%;
@@ -10318,7 +10318,7 @@ img.bg-image {
 }
 
 .bg-pattern {
-  background-image: url(/_next/static/media/jcjenson-banner.png);
+  background-image: url(/_next/static/media/pattern.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
