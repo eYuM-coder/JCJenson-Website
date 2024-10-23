@@ -9728,7 +9728,7 @@ input:checked + .slider:before {
 }
 
 .parallax {
-  background-image: url(/_next/static/media/jcjenson-banner.jpg);
+  background-image: url(/_next/static/media/website-banner.png);
   min-height: 800px;
   background-attachment: fixed;
   background-position: 50%;
